@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.detail.SeriesDetailFragment"
+    android:background="@color/black"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            >
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:id="@+id/detail_pb"
+                />
+        </FrameLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/detail_group"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/series_img"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/baseline_back"
+            app:layout_constraintLeft_toLeftOf="@id/series_img"
+            app:layout_constraintTop_toTopOf="@id/series_img"
+            android:layout_margin="@dimen/_10sdp"
+            android:id="@+id/back_nav"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/series_img"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Spider-Man no way home"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_lg"
+            android:layout_margin="@dimen/_10sdp"
+            android:maxLines="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/series_title"
+            />
+
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:isIndicator="true"
+            android:rating="3.3"
+            android:progressTint="@color/yellow"
+            android:id="@+id/series_rate"
+            android:transformPivotX="0dp"
+            android:transformPivotY="16dp"
+            android:secondaryProgressTint="@color/dark_gray"
+            app:layout_constraintTop_toBottomOf="@id/series_title"
+            app:layout_constraintStart_toStartOf="@id/series_title"
+            android:layout_marginTop="@dimen/_8sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_lg"
+            android:textStyle="bold"
+            tools:text="7.5"
+            app:layout_constraintTop_toTopOf="@id/series_rate"
+            app:layout_constraintBottom_toBottomOf="@id/series_rate"
+            app:layout_constraintLeft_toLeftOf="@id/series_rate"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.42"
+            android:textColor="@color/white"
+            android:id="@+id/rate_txt"
+            />
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintTop_toBottomOf="@id/series_rate"
+            app:layout_constraintStart_toStartOf="@id/series_title"
+            app:layout_constraintEnd_toEndOf="@id/series_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_md"
+            tools:text="Action, "
+            android:layout_marginTop="@dimen/_4sdp"
+            android:id="@+id/series_genera"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/series_date"
+            android:textColor="@color/blue_400"
+            tools:text="2022-10-20"
+            app:layout_constraintTop_toBottomOf="@id/series_genera"
+            app:layout_constraintStart_toStartOf="@id/series_title"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:textSize="@dimen/font_md"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview"
+            app:layout_constraintStart_toStartOf="@id/series_title"
+            app:layout_constraintTop_toBottomOf="@id/series_date"
+            android:textSize="@dimen/font_lg"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:id="@+id/overview_txt"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge"
+            android:textSize="@dimen/font_md"
+            app:layout_constraintTop_toBottomOf="@id/overview_txt"
+            app:layout_constraintStart_toStartOf="@id/series_title"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="@id/series_title"
+            android:textColor="@color/white"
+            android:id="@+id/series_overview"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/series_overview"
+            app:layout_constraintStart_toStartOf="@id/series_title"
+            app:layout_constraintEnd_toEndOf="@id/series_title"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_lg"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:text="@string/seasons"
+                android:id="@+id/season_txt"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:padding="@dimen/_10sdp"
+                android:id="@+id/season_rv"
+                tools:listitem="@layout/season_item"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_season_found"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_md"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:id="@+id/no_season_txt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/videos"
+                android:textSize="@dimen/font_lg"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:id="@+id/videos_txt"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:padding="@dimen/_10sdp"
+                android:id="@+id/series_videos_rv"
+                tools:listitem="@layout/video_item"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_videos"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_md"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:id="@+id/no_video_txt"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_14sdp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_lg"
+                    android:textColor="@color/white"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:text="@string/reviews"
+                    android:id="@+id/review_txt"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/see_all"
+                    android:textColor="@color/blue_400"
+                    android:textSize="@dimen/font_lg"
+                    android:id="@+id/review_see_all"
+                    />
+
+            </LinearLayout>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviews_rv"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/review_item"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_reviews"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_md"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:id="@+id/no_review_txt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_lg"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:text="@string/casts"
+                android:id="@+id/casts_txt"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/casts_rv"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:padding="@dimen/_10sdp"
+                tools:listitem="@layout/cast_item"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_casts_found"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_md"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:id="@+id/no_cast_txt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recommendation"
+                android:textSize="@dimen/font_lg"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:id="@+id/rec_txt"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recommend_rv"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:padding="@dimen/_10sdp"
+                tools:listitem="@layout/movie_card_view"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_recommendation"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_md"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:id="@+id/no_reco_txt"
+                />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

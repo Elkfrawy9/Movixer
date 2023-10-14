@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/_8sdp"
+    app:cardBackgroundColor="@color/dark_gray"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_12sdp"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_105sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            android:id="@+id/movie_img"
+            android:background="@color/black"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Spider Man bla bla bla bla bla bla bla"
+            app:layout_constraintStart_toEndOf="@id/movie_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/movie_img"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="@dimen/font_md"
+            android:id="@+id/movie_title"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10/2/2019"
+            android:textColor="@color/blue_400"
+            android:textSize="@dimen/font_sm"
+            app:layout_constraintTop_toBottomOf="@id/movie_title"
+            app:layout_constraintStart_toStartOf="@id/movie_title"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:id="@+id/movie_date"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Action, Fantasy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_sm"
+            app:layout_constraintTop_toBottomOf="@id/movie_date"
+            app:layout_constraintStart_toStartOf="@id/movie_title"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:id="@+id/movie_genera"
+            />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            app:layout_constraintStart_toStartOf="@id/movie_title"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:numStars="5"
+            android:isIndicator="true"
+            android:stepSize="0.1"
+            android:rating="2"
+            android:progressTint="@color/yellow"
+            android:id="@+id/movie_rate"
+            android:transformPivotX="0dp"
+            android:transformPivotY="16dp"
+            android:secondaryProgressTint="@color/dark_gray"
+            app:layout_constraintBottom_toBottomOf="@id/movie_img"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="3.2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_md"
+            app:layout_constraintTop_toTopOf="@id/movie_rate"
+            app:layout_constraintBottom_toBottomOf="@id/movie_rate"
+            app:layout_constraintStart_toEndOf="@id/movie_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            android:id="@+id/movie_txt_rate"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="(15k)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_md"
+            app:layout_constraintTop_toTopOf="@id/movie_txt_rate"
+            app:layout_constraintBottom_toBottomOf="@id/movie_txt_rate"
+            app:layout_constraintStart_toEndOf="@id/movie_txt_rate"
+            app:layout_constraintHorizontal_bias="0.45"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/movie_txt_vote"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

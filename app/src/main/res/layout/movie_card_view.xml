@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/dark_gray"
+    app:cardElevation="@dimen/_2sdp"
+    android:layout_marginEnd="@dimen/_5sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_8sdp"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_135sdp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/movie_img"
+            android:background="@color/black"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_sm"
+            tools:text="The Amazing Spider Man"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/movie_img"
+            app:layout_constraintLeft_toLeftOf="@id/movie_img"
+            app:layout_constraintRight_toRightOf="@id/movie_img"
+            android:layout_margin="@dimen/_4sdp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/movie_title"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_sm"
+            tools:text="2021"
+            android:textColor="@color/blue_400"
+            app:layout_constraintTop_toBottomOf="@id/movie_title"
+            app:layout_constraintLeft_toLeftOf="@id/movie_title"
+            app:layout_constraintRight_toRightOf="@id/movie_title"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:id="@+id/movie_date"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_sm"
+            tools:text="3.2"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/movie_date"
+            app:layout_constraintStart_toStartOf="@id/movie_img"
+            android:layout_margin="@dimen/_4sdp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/rate_txt"
+            app:drawableStartCompat="@drawable/baseline_star" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_sm"
+            tools:text="(100K)"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/rate_txt"
+            app:layout_constraintStart_toEndOf="@id/rate_txt"
+            app:layout_constraintBottom_toBottomOf="@id/rate_txt"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/popularity_title"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

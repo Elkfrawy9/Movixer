@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Movixer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="see_all">SEE ALL</string>
+    <string name="popular">Popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="up_coming">Up Coming</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="movie">Movie</string>
+    <string name="tv">TV</string>
+    <string name="videos">Videos</string>
+    <string name="overview">Overview</string>
+    <string name="reviews">Reviews</string>
+    <string name="casts">Casts</string>
+    <string name="recommendation">Recommendation</string>
+    <string name="similar">Similar</string>
+    <string name="airing_today">Airing Today</string>
+    <string name="on_the_air">On The Air</string>
+    <string name="seasons">Seasons</string>
+    <string name="genre">Genre</string>
+    <string name="birthday">Birthday</string>
+    <string name="images">Images</string>
+    <string name="movies">Movies</string>
+    <string name="no_videos">No Videos Found</string>
+    <string name="no_reviews">No Reviews Found</string>
+    <string name="no_recommendation">No Recommendation Found</string>
+    <string name="no_similar">No Similar Found</string>
+    <string name="no_casts_found">No Casts Found</string>
+    <string name="no_season_found">No Season Found</string>
+    <string name="no_image_found">No Image Found</string>
+    <string name="tv_series">Tv Series</string>
+    <string name="no_movies_found">No Movies Found</string>
+    <string name="no_tv_series_found">No Tv Series Found</string>
+    <string name="no_results_found">No results found</string>
+</resources>

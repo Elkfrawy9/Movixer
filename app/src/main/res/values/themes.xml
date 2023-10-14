@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Movixer" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorAccent">@color/blue_400</item>
+        <item name="colorPrimary">@color/blue_900</item>
+        <item name="colorPrimaryDark">@color/blue_900</item>
+        <item name="colorSurface">@color/blue_400</item>
+    </style>
+
+    <style name="Theme.Movixer" parent="Base.Theme.Movixer" />
+
+    <style name="Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/blue_400</item>
+    </style>
+</resources>
