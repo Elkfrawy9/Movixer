@@ -17,9 +17,3 @@ a sample Android project using The Movie DB API based on MVVM architecture
 <img src="https://github.com/Elkfrawy9/Movixer/assets/60475172/d48fe7ae-703d-434d-aa81-a080c2e715b4" width="850" height="500">
 <img src="https://github.com/Elkfrawy9/Movixer/assets/60475172/96ba5f87-223c-4fc0-bf2e-6122c46fb580" width="850" height="500">
 
-
-![mii](https://github.com/Elkfrawy9/Movixer/assets/60475172/d48fe7ae-703d-434d-aa81-a080c2e715b4)
-
-![miii](https://github.com/Elkfrawy9/Movixer/assets/60475172/96ba5f87-223c-4fc0-bf2e-6122c46fb580)
-
-
